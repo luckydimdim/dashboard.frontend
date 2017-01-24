@@ -1,49 +1,206 @@
 <div class="animated fadeIn">
     <div class="row">
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-4">
             <div class="card">
+                <div class="card-header">
+                    <i class="icon-calculator icon-bg"></i>План / факт анализиз бюджетов
+                    <div class="card-actions">
+                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                    </div>
+                </div>
                 <div class="card-block">
-                    <div class="h4 m-0">89.9%</div>
-                    <div class="pb-h">Lorem ipsum...</div>
-                    <progress class="progress progress-xs progress-success mb-h" value="25" max="100">25%</progress>
-                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                    <div class="pb-h">Морской порт (50% / 60%)</div>
+                    <progress class="progress progress-xs progress-danger mb-h" value="50" max="100">50%</progress>
+                    <progress class="progress progress-xs progress-success mb-h" value="60" max="100">60%</progress>
+                    <div class="pb-h">Резервуары хранения конденсата (85% / 80%)</div>
+                    <progress class="progress progress-xs progress-info mb-h" value="85" max="100">85%</progress>
+                    <progress class="progress progress-xs progress-warning mb-h" value="80" max="100">80%</progress>
+                    <div class="pb-h">Строительство объекта (45% / 50%)</div>
+                    <progress class="progress progress-xs progress-success mb-h" value="55" max="100">55%</progress>
+                    <progress class="progress progress-xs progress-warning mb-h" value="50" max="100">50%</progress>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="icon-docs icon-bg"></i>Анализ исполнения договоров
+                    <div class="card-actions">
+                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <div>
+                        № 752/14-ЯСПГ
+                        <span class="font-weight-bold pull-right">(40% - 1 234 567 <i class="fa fa-rub"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                    <div>
+                        № 644/15-ЯСПГ
+                        <span class="font-weight-bold pull-right">(20% - 23 523 232<i class="fa fa-rub"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
+
+                    <div>
+                        № 865/11-ЯСПГ
+                        <span class="font-weight-bold pull-right">(60% - 2 345 678 <i class="fa usd"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-warning mt-h" value="60" max="100">60%</progress>
+
+                    <div>
+                        № 532/3-ЯСПГ
+                        <span class="font-weight-bold pull-right">(80% - 7 323 000 <i class="fa fa-jpy"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-danger mt-h" value="80" max="100">80%</progress>
+
+                    <div>
+                        № 233/25-ЯСПГ
+                        <span class="font-weight-bold pull-right">(40.15% - 4 225 323 <i class="fa fa-rub"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                    <div>
+                        № 634/8-ЯСПГ
+                        <span class="font-weight-bold pull-right">(40% - 3 000 000 000 <i class="fa fa-usd"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                    <div>
+                        № 233/10-ЯСПГ
+                        <span class="font-weight-bold pull-right">(20% - 4 100 000 <i class="fa fa-jpy"></i>)</span>
+                    </div>
+                    <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
+
                 </div>
             </div>
         </div>
         <!--/col-->
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-6">
             <div class="card">
+                <div class="card-header">
+                    <i class="icon-note icon-bg"></i>Первичная документация
+                    <div class="card-actions">
+                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                    </div>
+                </div>
                 <div class="card-block">
-                    <div class="h4 m-0">12.124</div>
-                    <div class="pb-h">Lorem ipsum...</div>
-                    <progress class="progress progress-xs progress-info mb-h" value="25" max="100">25%</progress>
-                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                    <table class="table table-hover table-align-middle mb-0">
+                        <thead>
+                        <tr>
+                            <th>Подрядчик</th>
+                            <th>Договор</th>
+                            <th class="text-sm-center">Статус</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>ООО &laquo;Контрагент один&raquo;</td>
+                            <td>№ 752/14-ЯСПГ</td>
+                            <td class="text-sm-center text-info">
+                                Не проверена
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Контрагент для примера&raquo;</td>
+                            <td>№ 155/12-ЯСПГ</td>
+                            <td class="text-sm-center text-danger">
+                                Отказ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Контрагент два&raquo;</td>
+                            <td>№ 634/16-ЯСПГ</td>
+                            <td class="text-sm-center text-success">
+                                Согласована
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Контрагент три&raquo;</td>
+                            <td>№ 235/11-ЯСПГ</td>
+                            <td class="text-sm-center text-warning">
+                                На исправлении
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Еще контрагент&raquo;</td>
+                            <td>№ 835/1-ЯСПГ</td>
+                            <td class="text-sm-center text-primary">
+                                Согласована
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Название компании&raquo;</td>
+                            <td>№ 532/20-ЯСПГ</td>
+                            <td class="text-sm-center text-primary">
+                                Согласована
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Подрядчик первый&raquo;</td>
+                            <td>№ 112/1-ЯСПГ</td>
+                            <td class="text-sm-center text-warning">
+                                На исправлении
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ООО &laquo;Другой подрядчик&raquo;</td>
+                            <td>№ 723/10-ЯСПГ</td>
+                            <td class="text-sm-center text-primary">
+                                Согласована
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
         <!--/col-->
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-2">
             <div class="card">
-                <div class="card-block">
-                    <div class="h4 m-0">$98.111,00</div>
-                    <div class="pb-h">Lorem ipsum...</div>
-                    <progress class="progress progress-xs progress-warning mb-h" value="25" max="100">25%</progress>
-                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                <div class="card-block p-1 clearfix">
+                    <i class="fa fa-jpy bg-info p-1 font-2xl mr-1 pull-left"></i>
+                    <div class="h5 text-info mb-0 mt-h">0.5258 <i class="fa fa-rub"></i></div>
+                </div>
+                <div class="card-footer px-1 py-h">
+                    <a class="font-weight-bold font-xs btn-block text-muted" href="#">Изменить <i class="fa fa-angle-right pull-right font-lg"></i></a>
                 </div>
             </div>
-        </div>
-        <!--/col-->
-        <div class="col-sm-6 col-md-3">
+
+            <div class="card">
+                <div class="card-block p-1 clearfix">
+                    <i class="fa fa-usd bg-warning p-1 font-2xl mr-1 pull-left"></i>
+                    <div class="h5 text-info mb-0 mt-h">59.4000 <i class="fa fa-rub"></i></div>
+                </div>
+                <div class="card-footer px-1 py-h">
+                    <a class="font-weight-bold font-xs btn-block text-muted" href="#">Изменить <i class="fa fa-angle-right pull-right font-lg"></i></a>
+                </div>
+            </div>
+
             <div class="card">
                 <div class="card-block">
-                    <div class="h4 m-0">2 TB</div>
-                    <div class="pb-h">Lorem ipsum...</div>
-                    <progress class="progress progress-xs progress-danger mb-h" value="25" max="100">25%</progress>
-                    <small class="text-muted">Lorem ipsum dolor sit amet enim.</small>
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-pie-chart"></i>
+                    </div>
+                    <div class="h4 mb-0">77%</div>
+                    <small class="text-muted text-uppercase font-weight-bold">Общее исполнение договоров</small>
+                    <progress class="progress progress-xs progress-primary mt-1 mb-0" value="77" max="100">77%</progress>
+                </div>
+            </div>
+
+            <div class="card card-inverse card-primary">
+                <div class="card-block">
+                    <div class="h1 text-muted text-xs-right mb-2">
+                        <i class="icon-pie-chart"></i>
+                    </div>
+                    <div class="h4 mb-0">28%</div>
+                    <small class="text-muted text-uppercase font-weight-bold">Капитальные затраты</small>
+                    <progress class="progress progress-xs progress-primary mt-1 mb-0" value="25" max="100">25%</progress>
                 </div>
             </div>
         </div>
         <!--/col-->
     </div>
-    
 </div>
