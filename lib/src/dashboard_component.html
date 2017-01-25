@@ -1,184 +1,337 @@
 <div class="animated fadeIn">
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="card">
-                <div class="card-header">
-                    <i class="icon-calculator icon-bg"></i>План / факт анализиз бюджетов
-                    <div class="card-actions">
-                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
-                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <div class="pb-h">Морской порт (50% / 60%)</div>
-                    <progress class="progress progress-xs progress-danger mb-h" value="50" max="100">50%</progress>
-                    <progress class="progress progress-xs progress-success mb-h" value="60" max="100">60%</progress>
-                    <div class="pb-h">Резервуары хранения конденсата (85% / 80%)</div>
-                    <progress class="progress progress-xs progress-info mb-h" value="85" max="100">85%</progress>
-                    <progress class="progress progress-xs progress-warning mb-h" value="80" max="100">80%</progress>
-                    <div class="pb-h">Строительство объекта (45% / 50%)</div>
-                    <progress class="progress progress-xs progress-success mb-h" value="55" max="100">55%</progress>
-                    <progress class="progress progress-xs progress-warning mb-h" value="50" max="100">50%</progress>
-                </div>
-            </div>
-            <!--/.card-->
-            <div class="card">
-                <div class="card-header">
-                    <i class="icon-pie-chart icon-bg"></i>План / Plan 2016
-                    <div class="card-actions">
-                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
-                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <div class="chart-wrapper" style="height:370px;">
-                        <canvas id="main-chart" height="370"></canvas>
-                    </div>
-                    <div>
-                        План / Plan 2016
-                        <span class="float-xs-right">100% - 6 405 488</span>
-                    </div>
-                    <progress class="progress progress-sm progress-info mt-h" value="100" max="100">40%</progress>
-                    <div>
-                        Факт
-                        <span class="float-xs-right">92.51% - 5 926 070</span>
-                    </div>
-                    <progress class="progress progress-sm progress-success mt-h" value="92.51" max="100">80%</progress>
-                </div>
-            </div>
-            <!--/.card-->
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <i class="icon-calculator icon-bg"></i>План / факт анализиз бюджетов
+          <div class="card-actions">
+            <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+            <a href="#" class="btn-close"><i class="icon-close"></i></a>
+          </div>
         </div>
-        <!--/col-->
-        <div class="col-sm-6 col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    <i class="icon-note icon-bg"></i>Первичная документация
-                    <div class="card-actions">
-                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
-                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <table class="table table-hover table-align-middle mb-0">
-                        <thead>
-                        <tr>
-                            <th>Подрядчик</th>
-                            <th>Договор</th>
-                            <th>Состав</th>
-                            <th class="text-sm-center">Статус</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>ООО &laquo;Контрагент один&raquo;</td>
-                            <td>№ 752/14-ЯСПГ</td>
-                            <td>
-                                КС-2, КС-3
-                            </td>
-                            <td class="text-sm-center text-success">
-                                <span class="tag tag-success">Новая</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Контрагент для примера&raquo;</td>
-                            <td>№ 155/12-ЯСПГ</td>
-                            <td>
-                                КС-2, КС-3
-                            </td>
-                            <td class="text-sm-center text-warning">
-                                <span class="tag tag-warning">На исправлении</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Контрагент два&raquo;</td>
-                            <td>№ 634/16-ЯСПГ</td>
-                            <td>
-                                TS, MAR
-                            </td>
-                            <td class="text-sm-center text-warning">
-                                <span class="tag tag-warning">На исправлении</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Контрагент три&raquo;</td>
-                            <td>№ 235/11-ЯСПГ</td>
-                            <td>
-                                TS, MAR
-                            </td>
-                            <td class="text-sm-center text-warning">
-                                <span class="tag tag-warning">На исправлении</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Еще контрагент&raquo;</td>
-                            <td>№ 835/1-ЯСПГ</td>
-                            <td>
-                                TS, MAR
-                            </td>
-                            <td class="text-sm-center text-danger">
-                                <span class="tag tag-danger">Отказ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Название компании&raquo;</td>
-                            <td>№ 532/20-ЯСПГ</td>
-                            <td>
-                                КС-2, КС-3
-                            </td>
-                            <td class="text-sm-center text-success">
-                                <span class="tag tag-success">Новая</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Подрядчик первый&raquo;</td>
-                            <td>№ 112/1-ЯСПГ</td>
-                            <td>
-                                КС-2, КС-3
-                            </td>
-                            <td class="text-sm-center text-warning">
-                                <span class="tag tag-warning">На исправлении</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ООО &laquo;Другой подрядчик&raquo;</td>
-                            <td>№ 723/10-ЯСПГ</td>
-                            <td>
-                                КС-2, КС-3
-                            </td>
-                            <td class="text-sm-center text-success">
-                                <span class="tag tag-success">Новая</span>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        <div class="card-block">
+          <div class="pb-h">Морской порт (50% / 60%)</div>
+          <progress class="progress progress-xs progress-danger mb-h" value="50"
+                    max="100">50%
+          </progress>
+          <progress class="progress progress-xs progress-success mb-h"
+                    value="60" max="100">60%
+          </progress>
+          <div class="pb-h">Резервуары хранения конденсата (85% / 80%)</div>
+          <progress class="progress progress-xs progress-info mb-h" value="85"
+                    max="100">85%
+          </progress>
+          <progress class="progress progress-xs progress-warning mb-h"
+                    value="80" max="100">80%
+          </progress>
+          <div class="pb-h">Строительство объекта (45% / 50%)</div>
+          <progress class="progress progress-xs progress-success mb-h"
+                    value="55" max="100">55%
+          </progress>
+          <progress class="progress progress-xs progress-warning mb-h"
+                    value="50" max="100">50%
+          </progress>
         </div>
-        <!--/col-->
-        <div class="col-sm-6 col-md-2">
-            <div class="card">
-                <div class="card-block">
-                    <div class="h1 text-muted text-xs-right mb-2">
-                        <i class="icon-pie-chart"></i>
-                    </div>
-                    <div class="h4 mb-0">77%</div>
-                    <small class="text-muted text-uppercase font-weight-bold">Общее исполнение договоров</small>
-                    <progress class="progress progress-xs progress-primary mt-1 mb-0" value="77" max="100">77%</progress>
-                </div>
-            </div>
-
-            <div class="card card-inverse card-primary">
-                <div class="card-block">
-                    <div class="h1 text-muted text-xs-right mb-2">
-                        <i class="icon-pie-chart"></i>
-                    </div>
-                    <div class="h4 mb-0">28%</div>
-                    <small class="text-muted text-uppercase font-weight-bold">Капитальные затраты</small>
-                    <progress class="progress progress-xs progress-primary mt-1 mb-0" value="25" max="100">25%</progress>
-                </div>
-            </div>
+      </div>
+      <!--/.card-->
+      <div class="card">
+        <div class="card-header">
+          <i class="icon-pie-chart icon-bg"></i>План / Plan 2016
+          <div class="card-actions">
+            <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+            <a href="#" class="btn-close"><i class="icon-close"></i></a>
+          </div>
         </div>
-        <!--/col-->
+        <div class="card-block">
+          <div class="chart-wrapper" style="height:370px;">
+            <canvas id="main-chart" height="370"></canvas>
+          </div>
+          <div>
+            План / Plan 2016
+            <span class="float-xs-right">100% - 6 405 488</span>
+          </div>
+          <progress class="progress progress-sm progress-info mt-h" value="100"
+                    max="100">40%
+          </progress>
+          <div>
+            Факт
+            <span class="float-xs-right">92.51% - 5 926 070</span>
+          </div>
+          <progress class="progress progress-sm progress-success mt-h"
+                    value="92.51" max="100">80%
+          </progress>
+        </div>
+      </div>
+      <!--/.card-->
     </div>
-    <!--/row-->
+    <!--/.col-->
+    <div class="col-sm-8 col-md-8">
+      <div class="row">
+        <div class="col-sm-9 col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <i class="icon-note icon-bg"></i>Первичная документация
+              <div class="card-actions">
+                <a href="#" class="btn-setting"><i
+                  class="icon-settings"></i></a>
+                <a href="#" class="btn-close"><i class="icon-close"></i></a>
+              </div>
+            </div>
+            <div class="card-block">
+              <table
+                class="table table-hover table-align-middle mb-0 table-striped">
+                <thead>
+                <tr>
+                  <th>Подрядчик</th>
+                  <th>Договор</th>
+                  <th>Состав</th>
+                  <th class="text-sm-center">Статус</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>ООО &laquo;Контрагент один&raquo;</td>
+                  <td>№ 752/14-ЯСПГ</td>
+                  <td>
+                    КС-2, КС-3
+                  </td>
+                  <td class="text-sm-center text-success">
+                    <span class="tag tag-success">Новая</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Контрагент для примера&raquo;</td>
+                  <td>№ 155/12-ЯСПГ</td>
+                  <td>
+                    КС-2, КС-3
+                  </td>
+                  <td class="text-sm-center text-warning">
+                    <span class="tag tag-warning">На исправлении</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Контрагент два&raquo;</td>
+                  <td>№ 634/16-ЯСПГ</td>
+                  <td>
+                    TS, MAR
+                  </td>
+                  <td class="text-sm-center text-warning">
+                    <span class="tag tag-warning">На исправлении</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Контрагент три&raquo;</td>
+                  <td>№ 235/11-ЯСПГ</td>
+                  <td>
+                    TS, MAR
+                  </td>
+                  <td class="text-sm-center text-warning">
+                    <span class="tag tag-warning">На исправлении</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Еще контрагент&raquo;</td>
+                  <td>№ 835/1-ЯСПГ</td>
+                  <td>
+                    TS, MAR
+                  </td>
+                  <td class="text-sm-center text-danger">
+                    <span class="tag tag-danger">Отказ</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Название компании&raquo;</td>
+                  <td>№ 532/20-ЯСПГ</td>
+                  <td>
+                    КС-2, КС-3
+                  </td>
+                  <td class="text-sm-center text-success">
+                    <span class="tag tag-success">Новая</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Подрядчик первый&raquo;</td>
+                  <td>№ 112/1-ЯСПГ</td>
+                  <td>
+                    КС-2, КС-3
+                  </td>
+                  <td class="text-sm-center text-warning">
+                    <span class="tag tag-warning">На исправлении</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ООО &laquo;Другой подрядчик&raquo;</td>
+                  <td>№ 723/10-ЯСПГ</td>
+                  <td>
+                    КС-2, КС-3
+                  </td>
+                  <td class="text-sm-center text-success">
+                    <span class="tag tag-success">Новая</span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--/col-->
+        <div class="col-sm-3 col-md-3">
+          <div class="card">
+            <div class="card-block">
+              <div class="h1 text-muted text-xs-right mb-2">
+                <i class="icon-pie-chart"></i>
+              </div>
+              <div class="h4 mb-0">77%</div>
+              <small class="text-muted text-uppercase font-weight-bold">Общее
+                исполнение договоров
+              </small>
+              <progress class="progress progress-xs progress-primary mt-1 mb-0"
+                        value="77" max="100">77%
+              </progress>
+            </div>
+          </div>
+
+          <div class="card card-inverse card-primary">
+            <div class="card-block">
+              <div class="h1 text-muted text-xs-right mb-2">
+                <i class="icon-pie-chart"></i>
+              </div>
+              <div class="h4 mb-0">28%</div>
+              <small class="text-muted text-uppercase font-weight-bold">
+                Капитальные затраты
+              </small>
+              <progress class="progress progress-xs progress-primary mt-1 mb-0"
+                        value="25" max="100">25%
+              </progress>
+            </div>
+          </div>
+        </div>
+        <!--/col-->
+      </div>
+      <!--/.row-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="icon-pie-chart icon-bg"></i> Анализ исполнения плана
+              финансирования на 2016 г
+              <div class="card-actions">
+                <a href="#" class="btn-setting"><i
+                  class="icon-settings"></i></a>
+                <a href="#" class="btn-close"><i class="icon-close"></i></a>
+              </div>
+            </div>
+            <div class="card-block">
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                <tr>
+                  <th>Статья</th>
+                  <th>План 2016</th>
+                  <th>Факт 2016</th>
+                  <th>Отклонение</th>
+                  <th>В т.ч. курсовая<br /> разница</th>
+                  <th>В т.ч. отклонение<br /> объема / цены</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Менеджмент (Компания)</td>
+                  <td>1 000 000</td>
+                  <td>800 000</td>
+                  <td>1.5%</td>
+                  <td>100</td>
+                  <td>345734</td>
+                </tr>
+                <tr>
+                  <td>Инжиниринг (Компания)</td>
+                  <td>2 000 000</td>
+                  <td>1 800 000</td>
+                  <td>2.3%</td>
+                  <td>200</td>
+                  <td>235235</td>
+                </tr>
+                <tr>
+                  <td>Завод СПГ</td>
+                  <td>3 000 000</td>
+                  <td>2 800 000</td>
+                  <td>5.2%</td>
+                  <td>300</td>
+                  <td>6236</td>
+                </tr>
+                <tr>
+                  <td>Вахтовый поселок</td>
+                  <td>4 000 000</td>
+                  <td>3 800 000</td>
+                  <td>6.7%</td>
+                  <td>400</td>
+                  <td>133</td>
+                </tr>
+                <tr>
+                  <td>Резервуары СПГ</td>
+                  <td>5 000 000</td>
+                  <td>4 800 000</td>
+                  <td>4.6%</td>
+                  <td>500</td>
+                  <td>345345</td>
+                </tr>
+                <tr>
+                  <td>Электростанция</td>
+                  <td>6 000 000</td>
+                  <td>5 800 000</td>
+                  <td>4.4%</td>
+                  <td>600</td>
+                  <td>2345</td>
+                </tr>
+                <tr>
+                  <td>Административная зона</td>
+                  <td>7 000 000</td>
+                  <td>6 800 000</td>
+                  <td>7%</td>
+                  <td>700</td>
+                  <td>46754</td>
+                </tr>
+                <tr>
+                  <td>Входные сооружения по подготовке газа</td>
+                  <td>8 000 000</td>
+                  <td>7 800 000</td>
+                  <td>4%</td>
+                  <td>800</td>
+                  <td>6453</td>
+                </tr>
+                <tr>
+                  <td>Резервуары хранения конденсата</td>
+                  <td>9 000 000</td>
+                  <td>8 800 000</td>
+                  <td>7%</td>
+                  <td>900</td>
+                  <td>4358</td>
+                </tr>
+                <tr>
+                  <td>Морской порт</td>
+                  <td>10 000 000</td>
+                  <td>9 800 000</td>
+                  <td>2%</td>
+                  <td>123</td>
+                  <td>3634</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold">Общий итог</td>
+                  <td class="font-weight-bold">11 000 000</td>
+                  <td class="font-weight-bold">10 000 000</td>
+                  <td class="font-weight-bold">2.3%</td>
+                  <td class="font-weight-bold">321</td>
+                  <td class="font-weight-bold">6343</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--/col-->
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/row-->
 </div>
