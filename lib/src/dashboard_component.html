@@ -21,60 +21,6 @@
                     <progress class="progress progress-xs progress-warning mb-h" value="50" max="100">50%</progress>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <i class="icon-docs icon-bg"></i>Анализ исполнения договоров
-                    <div class="card-actions">
-                        <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
-                        <a href="#" class="btn-close"><i class="icon-close"></i></a>
-                    </div>
-                </div>
-                <div class="card-block">
-                    <div>
-                        № 752/14-ЯСПГ
-                        <span class="font-weight-bold pull-right">(40% - 1 234 567 <i class="fa fa-rub"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
-
-                    <div>
-                        № 644/15-ЯСПГ
-                        <span class="font-weight-bold pull-right">(20% - 23 523 232<i class="fa fa-rub"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
-
-                    <div>
-                        № 865/11-ЯСПГ
-                        <span class="font-weight-bold pull-right">(60% - 2 345 678 <i class="fa usd"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-warning mt-h" value="60" max="100">60%</progress>
-
-                    <div>
-                        № 532/3-ЯСПГ
-                        <span class="font-weight-bold pull-right">(80% - 7 323 000 <i class="fa fa-jpy"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-danger mt-h" value="80" max="100">80%</progress>
-
-                    <div>
-                        № 233/25-ЯСПГ
-                        <span class="font-weight-bold pull-right">(40.15% - 4 225 323 <i class="fa fa-rub"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
-
-                    <div>
-                        № 634/8-ЯСПГ
-                        <span class="font-weight-bold pull-right">(40% - 3 000 000 000 <i class="fa fa-usd"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
-
-                    <div>
-                        № 233/10-ЯСПГ
-                        <span class="font-weight-bold pull-right">(20% - 4 100 000 <i class="fa fa-jpy"></i>)</span>
-                    </div>
-                    <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
-
-                </div>
-            </div>
         </div>
         <!--/col-->
         <div class="col-sm-6 col-md-6">
@@ -92,6 +38,7 @@
                         <tr>
                             <th>Подрядчик</th>
                             <th>Договор</th>
+                            <th>Состав</th>
                             <th class="text-sm-center">Статус</th>
                         </tr>
                         </thead>
@@ -99,57 +46,81 @@
                         <tr>
                             <td>ООО &laquo;Контрагент один&raquo;</td>
                             <td>№ 752/14-ЯСПГ</td>
-                            <td class="text-sm-center text-info">
-                                Не проверена
+                            <td>
+                                КС-2, КС-3
+                            </td>
+                            <td class="text-sm-center text-success">
+                                <span class="tag tag-success">Новая</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Контрагент для примера&raquo;</td>
                             <td>№ 155/12-ЯСПГ</td>
-                            <td class="text-sm-center text-danger">
-                                Отказ
+                            <td>
+                                КС-2, КС-3
+                            </td>
+                            <td class="text-sm-center text-warning">
+                                <span class="tag tag-warning">На исправлении</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Контрагент два&raquo;</td>
                             <td>№ 634/16-ЯСПГ</td>
-                            <td class="text-sm-center text-success">
-                                Согласована
+                            <td>
+                                TS, MAR
+                            </td>
+                            <td class="text-sm-center text-warning">
+                                <span class="tag tag-warning">На исправлении</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Контрагент три&raquo;</td>
                             <td>№ 235/11-ЯСПГ</td>
+                            <td>
+                                TS, MAR
+                            </td>
                             <td class="text-sm-center text-warning">
-                                На исправлении
+                                <span class="tag tag-warning">На исправлении</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Еще контрагент&raquo;</td>
                             <td>№ 835/1-ЯСПГ</td>
-                            <td class="text-sm-center text-primary">
-                                Согласована
+                            <td>
+                                TS, MAR
+                            </td>
+                            <td class="text-sm-center text-danger">
+                                <span class="tag tag-danger">Отказ</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Название компании&raquo;</td>
                             <td>№ 532/20-ЯСПГ</td>
-                            <td class="text-sm-center text-primary">
-                                Согласована
+                            <td>
+                                КС-2, КС-3
+                            </td>
+                            <td class="text-sm-center text-success">
+                                <span class="tag tag-success">Новая</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Подрядчик первый&raquo;</td>
                             <td>№ 112/1-ЯСПГ</td>
+                            <td>
+                                КС-2, КС-3
+                            </td>
                             <td class="text-sm-center text-warning">
-                                На исправлении
+                                <span class="tag tag-warning">На исправлении</span>
                             </td>
                         </tr>
                         <tr>
                             <td>ООО &laquo;Другой подрядчик&raquo;</td>
                             <td>№ 723/10-ЯСПГ</td>
-                            <td class="text-sm-center text-primary">
-                                Согласована
+                            <td>
+                                КС-2, КС-3
+                            </td>
+                            <td class="text-sm-center text-success">
+                                <span class="tag tag-success">Новая</span>
                             </td>
                         </tr>
                         </tbody>
@@ -159,26 +130,6 @@
         </div>
         <!--/col-->
         <div class="col-sm-6 col-md-2">
-            <div class="card">
-                <div class="card-block p-1 clearfix">
-                    <i class="fa fa-jpy bg-info p-1 font-2xl mr-1 pull-left"></i>
-                    <div class="h5 text-info mb-0 mt-h">0.5258 <i class="fa fa-rub"></i></div>
-                </div>
-                <div class="card-footer px-1 py-h">
-                    <a class="font-weight-bold font-xs btn-block text-muted" href="#">Изменить <i class="fa fa-angle-right pull-right font-lg"></i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-block p-1 clearfix">
-                    <i class="fa fa-usd bg-warning p-1 font-2xl mr-1 pull-left"></i>
-                    <div class="h5 text-info mb-0 mt-h">59.4000 <i class="fa fa-rub"></i></div>
-                </div>
-                <div class="card-footer px-1 py-h">
-                    <a class="font-weight-bold font-xs btn-block text-muted" href="#">Изменить <i class="fa fa-angle-right pull-right font-lg"></i></a>
-                </div>
-            </div>
-
             <div class="card">
                 <div class="card-block">
                     <div class="h1 text-muted text-xs-right mb-2">
@@ -203,4 +154,63 @@
         </div>
         <!--/col-->
     </div>
+    <!--/row-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    Traffic
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-9 px-2">
+                            <div class="chart-wrapper" style="height:370px;">
+                                <canvas id="main-chart" height="370"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <div>Visits
+                                <span class="font-weight-bold float-xs-right">(40% - 29.703 Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                            <div>Unique
+                                <span class="font-weight-bold float-xs-right">(20% - 24.093 Unique Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
+
+                            <div>Pageviews
+                                <span class="font-weight-bold float-xs-right">(60% - 78.706 Views)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-warning mt-h" value="60" max="100">60%</progress>
+
+                            <div>New Users
+                                <span class="font-weight-bold float-xs-right">(80% - 22.123 Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-danger mt-h" value="80" max="100">80%</progress>
+
+                            <div>Bounce Rate
+                                <span class="font-weight-bold float-xs-right">(40.15%)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                            <div>Visits
+                                <span class="font-weight-bold float-xs-right">(40% - 29.703 Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-success mt-h" value="40" max="100">40%</progress>
+
+                            <div>Unique
+                                <span class="font-weight-bold float-xs-right">(20% - 24.093 Unique Users)</span>
+                            </div>
+                            <progress class="progress progress-sm progress-info mt-h" value="20" max="100">20%</progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.card-->
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
 </div>
