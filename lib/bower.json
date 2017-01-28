@@ -25,6 +25,7 @@
     "bootstrap": "v4.0.0-alpha.5",
     "jquery": "^3.1.1",
     "PACE": "pace#^1.0.2",
-    "chart.js": "^2.4.0"
+    "chart.js": "^2.4.0",
+    "gauge.js": "^1.2.1"
   }
 }

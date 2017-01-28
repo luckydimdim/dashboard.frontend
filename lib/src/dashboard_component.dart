@@ -30,34 +30,61 @@ class DashboardComponent implements OnInit {
     _resourcesLoaderService.loadScript(
         'vendor/chart.js/dist/', 'Chart.min.js', false, onData: initMainChart);
 
-    //initGauge1();
+    initGauge1();
+    initGauge2();
   }
 
-  initGauge1() {
+  Future initGauge1() async {
     var grayDark =      '#2a2c36';
     var brandInfo =     '#63c2de';
     var grayLighter =   '#d1d4d7';
 
-    ResourcesLoaderService resourcesLoader = new ResourcesLoaderService();
-
     var options = new GaugeOptions()
-      ..angle = 0.15
-      ..lineWidth = 0.44
-      ..pointer = new PointerOptions(length: 0.8,strokeWidth:0.035,color: grayDark )
+      ..angle = 0.35
+      ..lineWidth = 0.1
+      ..pointer = new PointerOptions(length: 0.9,strokeWidth:0.035,color: grayDark )
       ..limitMax = false
       ..colorStart = brandInfo
       ..colorStop = brandInfo
       ..strokeColor = grayLighter
       ..generateGradient = true;
 
-    var gauge = new Gauge(resourcesLoader, querySelector('#gauge') as CanvasElement, options);
+    var gauge = new Donut(this._resourcesLoaderService, querySelector('#gauge1') as CanvasElement, options);
 
-    gauge.Init().then((_){
-      gauge.maxValue = 3000; // set max gauge value
+    var success = await gauge.Init();
+
+    if (success){
+      gauge.maxValue = 100; // set max gauge value
       gauge.animationSpeed = 32; // set animation speed (32 is default value)
-      gauge.set(2000); // set actual value
-    });
+      gauge.set(77); // set actual value
+    }
 
+  }
+
+  Future initGauge2() async {
+    var grayDark =      '#2a2c36';
+    var brandInfo =     '#63c2de';
+    var grayLighter =   '#d1d4d7';
+
+    var options = new GaugeOptions()
+      ..angle = 0.35
+      ..lineWidth = 0.1
+      ..pointer = new PointerOptions(length: 0.9,strokeWidth:0.035,color: grayDark )
+      ..limitMax = false
+      ..colorStart = brandInfo
+      ..colorStop = brandInfo
+      ..strokeColor = grayLighter
+      ..generateGradient = true;
+
+    var gauge = new Donut(this._resourcesLoaderService, querySelector('#gauge2') as CanvasElement, options);
+
+    var success = await gauge.Init();
+
+    if (success){
+      gauge.maxValue = 100; // set max gauge value
+      gauge.animationSpeed = 32; // set animation speed (32 is default value)
+      gauge.set(28); // set actual value
+    }
 
   }
 
