@@ -22,7 +22,11 @@ dev_dependencies:
     yaml: ^2.1.12                         # A parser for YAML. https://pub.dartlang.org/packages/yaml
     resources_loader:
       git: http://cm-ylng-msk-04/git/resources_loader.frontend.git
-
+dependency_overrides:
+    resources_loader:
+      git: git@github.com:luckydimdim/resources_loader.frontend.git
+    gauge:
+      git: git@github.com:luckydimdim/gauge.frontend.git
 
 # Used to configure dart2js or other transformers
 transformers:
