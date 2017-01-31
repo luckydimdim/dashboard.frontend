@@ -136,14 +136,14 @@ class DashboardComponent implements OnInit {
       '12'
     ], datasets: <ChartDataSets>[
       new ChartDataSets(
-          label: 'My First dataset',
+          label: 'План',
           backgroundColor: 'rgba(99,194,222,0.1)', //convertHex($.brandInfo,10),
           borderColor: brandInfo,
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
           data: data1),
       new ChartDataSets(
-          label: 'My Second dataset',
+          label: 'Факт',
           backgroundColor: 'transparent',
           borderColor: brandSuccess,
           pointHoverBackgroundColor: '#fff',
