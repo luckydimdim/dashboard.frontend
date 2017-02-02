@@ -37,14 +37,13 @@ class DashboardComponent implements OnInit {
   }
 
   @override
-  void ngOnInit() {
+  Future ngOnInit() async {
 
     breadcrumbInit();
 
-    _resourcesLoaderService.loadScript(
-        'vendor/chart.js/dist/', 'Chart.min.js', false,
-        onData: initMainChart);
+   await _resourcesLoaderService.loadScriptAsync('vendor/chart.js/dist/', 'Chart.min.js', false,);
 
+    initMainChart();
     initGauge1();
   }
 
