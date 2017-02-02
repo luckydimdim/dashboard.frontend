@@ -24,8 +24,23 @@ class DashboardComponent implements OnInit {
 
   DashboardComponent(this._router, this._resourcesLoaderService) {}
 
+  // import 'dart:html';
+  void breadcrumbInit(){
+    var  breadcrumbContent = querySelector('#breadcrumbContent') as DivElement;
+
+    if (breadcrumbContent == null)
+      return;
+
+    breadcrumbContent.innerHtml = '''
+            <li class="breadcrumb-item active">Главная</li>
+    ''';
+  }
+
   @override
   void ngOnInit() {
+
+    breadcrumbInit();
+
     _resourcesLoaderService.loadScript(
         'vendor/chart.js/dist/', 'Chart.min.js', false,
         onData: initMainChart);
