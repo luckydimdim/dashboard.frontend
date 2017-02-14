@@ -8,6 +8,7 @@ import 'package:angular2/src/platform/browser/location/hash_location_strategy.da
 import 'package:angular2/platform/common.dart';
 
 import 'package:resources_loader/resources_loader.dart';
+import 'package:master_layout/master_layout_component.dart';
 
 import 'package:dashboard/dashboard_component.dart';
 
@@ -15,12 +16,18 @@ bool get isDebug =>
     (const String.fromEnvironment('PRODUCTION', defaultValue: 'false')) !=
     'true';
 
+@Component(selector: 'app')
+@View(
+  template: '<master-layout><dashboard></dashboard></master-layout>',
+  directives: const [MasterLayoutComponent, DashboardComponent])
+class AppComponent {}
+
 main() async {
   if (isDebug) {
     reflector.trackUsage();
   }
 
-  ComponentRef ref = await bootstrap(DashboardComponent, [
+  ComponentRef ref = await bootstrap(AppComponent, [
     ROUTER_PROVIDERS,
     const Provider(LocationStrategy, useClass: HashLocationStrategy),
     const Provider(ResourcesLoaderService, useClass: ResourcesLoaderService)

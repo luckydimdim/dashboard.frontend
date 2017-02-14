@@ -41,7 +41,7 @@ class DashboardComponent implements OnInit {
 
     breadcrumbInit();
 
-   await _resourcesLoaderService.loadScriptAsync('vendor/chart.js/dist/', 'Chart.min.js', false,);
+   await _resourcesLoaderService.loadScriptAsync('packages/dashboard/src/bower_components/chart.js/dist/', 'Chart.min.js', false);
 
     initMainChart();
     initGauge1();

@@ -1,0 +1,25 @@
+{
+  "name": "cmas",
+  "authors": [
+    "Andrey Kuzmenko <andrey.kuzmenko@yamalspg.ru>",
+    "Dmitriy Litovchenko <dmitriy.litovchenko@yamalspg.ru>"
+  ],
+  "description": "cmas",
+  "main": "web/main.dart",
+  "keywords": [
+    "cmas"
+  ],
+  "license": "yamallng",
+  "homepage": "http://yamalspg.ru/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "../web/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": "^2.4.0"
+  }
+}
