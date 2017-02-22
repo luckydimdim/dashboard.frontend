@@ -12,7 +12,7 @@ import 'dart:html';
 import 'dart:math' as math;
 
 @Component(selector: 'dashboard', templateUrl: 'dashboard_component.html')
-class DashboardComponent implements OnInit {
+class DashboardComponent implements OnInit, OnDestroy {
   static const String route_name = 'Dashboard';
   static const String route_path = 'dashboard';
   static const Route route = const Route(
@@ -53,6 +53,11 @@ class DashboardComponent implements OnInit {
 
     initMainChart();
     initGauge1();
+  }
+
+  @override
+  void ngOnDestroy() {
+    this._asideService.removePane(PaneType.Dashboard);
   }
 
   Future initGauge1() async {
