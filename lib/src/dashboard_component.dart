@@ -5,6 +5,8 @@ import 'package:angular2/router.dart';
 import 'package:resources_loader/resources_loader.dart';
 import 'package:chartjs/chartjs.dart';
 import 'package:gauge/gauge.dart';
+import 'package:aside/aside_service.dart';
+import 'package:aside/pane_types.dart';
 
 import 'dart:html';
 import 'dart:math' as math;
@@ -20,13 +22,15 @@ class DashboardComponent implements OnInit {
       useAsDefault: true);
 
   final Router _router;
+  final AsideService _asideService;
   final ResourcesLoaderService _resourcesLoaderService;
 
-  DashboardComponent(this._router, this._resourcesLoaderService) {}
+  DashboardComponent(this._router, this._resourcesLoaderService,
+      this._asideService) {}
 
   // import 'dart:html';
-  void breadcrumbInit(){
-    var  breadcrumbContent = querySelector('#breadcrumbContent') as HtmlElement;
+  void breadcrumbInit() {
+    var breadcrumbContent = querySelector('#breadcrumbContent') as HtmlElement;
 
     if (breadcrumbContent == null)
       return;
@@ -39,9 +43,13 @@ class DashboardComponent implements OnInit {
   @override
   Future ngOnInit() async {
 
+    this._asideService.addPane(PaneType.Dashboard);
+
     breadcrumbInit();
 
-   await _resourcesLoaderService.loadScriptAsync('packages/dashboard/src/bower_components/chart.js/dist/', 'Chart.min.js', false);
+    await _resourcesLoaderService.loadScriptAsync(
+        'packages/dashboard/src/bower_components/chart.js/dist/',
+        'Chart.min.js', false);
 
     initMainChart();
     initGauge1();
@@ -56,7 +64,7 @@ class DashboardComponent implements OnInit {
       ..angle = 0.35
       ..lineWidth = 0.1
       ..pointer =
-          new PointerOptions(length: 0.9, strokeWidth: 0.035, color: grayDark)
+      new PointerOptions(length: 0.9, strokeWidth: 0.035, color: grayDark)
       ..limitMax = false
       ..colorStart = brandInfo
       ..colorStop = brandInfo
@@ -151,7 +159,8 @@ class DashboardComponent implements OnInit {
     ], datasets: <ChartDataSets>[
       new ChartDataSets(
           label: 'План',
-          backgroundColor: 'rgba(99,194,222,0.1)', //convertHex($.brandInfo,10),
+          backgroundColor: 'rgba(99,194,222,0.1)',
+          //convertHex($.brandInfo,10),
           borderColor: brandInfo,
           pointHoverBackgroundColor: '#fff',
           borderWidth: 2,
@@ -166,7 +175,7 @@ class DashboardComponent implements OnInit {
     ]);
 
     var config =
-        new ChartConfiguration(type: 'line', data: data, options: chartOptions);
+    new ChartConfiguration(type: 'line', data: data, options: chartOptions);
 
     new Chart(querySelector('#main-chart') as CanvasElement, config);
   }
