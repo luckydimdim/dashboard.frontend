@@ -30,14 +30,6 @@ class DashboardComponent implements OnInit, OnDestroy {
 
   // import 'dart:html';
   void breadcrumbInit() {
-    var breadcrumbContent = querySelector('#breadcrumbContent') as HtmlElement;
-
-    if (breadcrumbContent == null)
-      return;
-
-    breadcrumbContent.innerHtml = '''
-            <li class="breadcrumb-item active">Главная</li>
-    ''';
   }
 
   @override
