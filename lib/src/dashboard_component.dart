@@ -68,16 +68,14 @@ class DashboardComponent implements OnInit, OnDestroy {
       ..strokeColor = grayLighter
       ..generateGradient = true;
 
-    var gauge = new Donut(this._resourcesLoaderService,
-        querySelector('#gauge1') as CanvasElement, options);
+    var gauge = new DonutStatic(querySelector('#gauge1') as CanvasElement);
 
-    var success = await gauge.Init();
+    gauge.setOptions(options);
 
-    if (success) {
-      gauge.maxValue = 100; // set max gauge value
-      gauge.animationSpeed = 32; // set animation speed (32 is default value)
-      gauge.set(77); // set actual value
-    }
+    gauge.maxValue = 100; // set max gauge value
+    gauge.animationSpeed = 32; // set animation speed (32 is default value)
+    gauge.set(77); // set actual value
+
   }
 
   void initMainChart() {
