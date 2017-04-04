@@ -35,7 +35,7 @@ class DashboardComponent implements OnInit, OnDestroy {
   @override
   Future ngOnInit() async {
 
-    this._asideService.addPane(PaneType.Dashboard);
+    this._asideService.addPane(PaneType.dashboard);
 
     breadcrumbInit();
 
@@ -49,7 +49,7 @@ class DashboardComponent implements OnInit, OnDestroy {
 
   @override
   void ngOnDestroy() {
-    this._asideService.removePane(PaneType.Dashboard);
+    this._asideService.removePane(PaneType.dashboard);
   }
 
   Future initGauge1() async {
