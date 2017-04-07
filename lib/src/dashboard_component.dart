@@ -13,12 +13,14 @@ import 'dart:math' as math;
 
 @Component(selector: 'dashboard', templateUrl: 'dashboard_component.html')
 class DashboardComponent implements OnInit, OnDestroy {
+  static const DisplayName = const {'displayName': 'Рабочий стол'};
   static const String route_name = 'Dashboard';
   static const String route_path = 'dashboard';
   static const Route route = const Route(
       path: DashboardComponent.route_path,
       component: DashboardComponent,
       name: DashboardComponent.route_name,
+      data: DisplayName,
       useAsDefault: true);
 
   final Router _router;
