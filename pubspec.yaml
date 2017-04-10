@@ -36,14 +36,13 @@ transformers:
         platform_pipes:
           - package:angular2/common.dart#COMMON_PIPES
         entry_points: web/main.dart
+    - reflectable:
+        entry_points:
+          - web/main.dart # The path to your main file
+        formatted: true # Optional.
     - dart_to_js_script_rewriter
     - $dart2js:
         commandLineOptions:
             - --trust-type-annotations
             - --trust-primitives
             - --show-package-warnings # Show warnings and hints generated from packages.
-            - --enable-experimental-mirrors
-    - reflectable:
-        entry_points:
-          - web/main.dart # The path to your main file
-        formatted: true # Optional.
